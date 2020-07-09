@@ -4,8 +4,13 @@ vRP = Proxy.getInterface("vRP")
 vRPclient = Tunnel.getInterface("vRP")
 
 local logs = {
+	{ key = "itemrecebido", url = "https://discordapp.com/api/webhooks/728989689692029012/Tf06HLkgKN-isbT5OlCI1oLBiuMFWE0V2XgwsqXJ-lDm70Bu-X_nyd8pXzlXzcxDphNb"},
 	{ key = "admin", url = "https://discordapp.com/api/webhooks/728989689692029012/Tf06HLkgKN-isbT5OlCI1oLBiuMFWE0V2XgwsqXJ-lDm70Bu-X_nyd8pXzlXzcxDphNb"},
 }
+
+AddEventHandler("gmz:logs", function(cb)
+    cb(json.encode(logs))
+end)
 
 AddEventHandler("gmz:loadLogs", function(cb)
     cb(json.encode(logs))
