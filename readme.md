@@ -49,4 +49,6 @@ end
 > Obs: O primeiro parâemetro `itemrecebido`, deve ser o nome da key que você definiu no script `gmz_logs`
 
 3. Segue exemplo de como a mensagem fica no discord:
+
+
 ![enter image description here](https://i.imgur.com/rF8hQ9e.png)
